@@ -65,7 +65,15 @@ fun TugasLoginLayout(modifier: Modifier = Modifier){
                 text = "Nama",
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Blue
+                color = Color.DarkGray
+            )
+            //Isian nama
+            Text(
+                text = "Riza Fitria Istiqomah Zaitunah",
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                fontStyle = FontStyle.Italic,
+                color = Color.Transparent
             )
 
         }
