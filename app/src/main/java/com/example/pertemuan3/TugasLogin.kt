@@ -60,6 +60,14 @@ fun TugasLoginLayout(modifier: Modifier = Modifier){
 
             Spacer(modifier = Modifier.height(30.dp))
 
+            //Label Nama
+            Text(
+                text = "Nama",
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Blue
+            )
+
         }
     }
 }
