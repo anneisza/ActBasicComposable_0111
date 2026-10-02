@@ -20,6 +20,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.layout.layout
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -63,6 +64,15 @@ fun TugasLoginLayout(modifier: Modifier = Modifier){
             )
 
             Spacer(modifier = Modifier.height(30.dp))
+
+            //Logo Univ
+            Image(
+                painter = painterResource(R.drawable.logo),
+                contentDescription = "Logo UMY",
+                modifier = Modifier.size(150.dp)
+            )
+
+            Spacer(modifier = Modifier.height(40.dp))
 
             //Label Nama
             Text(
