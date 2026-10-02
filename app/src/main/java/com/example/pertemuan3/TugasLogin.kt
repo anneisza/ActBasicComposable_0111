@@ -10,11 +10,15 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontStyle
@@ -81,6 +85,18 @@ fun TugasLoginLayout(modifier: Modifier = Modifier){
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.LightGray
+            )
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            //Gambar akun(profil)
+            Image(
+                painter = painterResource(R.drawable.profil),
+                contentDescription = "Gambar profil",
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .size(260.dp)
+                    .clip(CircleShape)
             )
 
         }
