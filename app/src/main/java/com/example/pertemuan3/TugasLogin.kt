@@ -75,6 +75,13 @@ fun TugasLoginLayout(modifier: Modifier = Modifier){
                 fontStyle = FontStyle.Italic,
                 color = Color.Transparent
             )
+            //Isian NIM
+            Text(
+                text = "20240140111",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.LightGray
+            )
 
         }
     }
