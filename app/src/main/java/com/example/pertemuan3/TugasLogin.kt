@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -47,6 +48,14 @@ fun TugasLoginLayout(modifier: Modifier = Modifier){
                 fontWeight = FontWeight.Bold,
                 color = Color.White
             )
+            //Subjudul nya
+            Text(
+                text = "Welcome to this healing app!",
+                fontSize = 14.sp,
+                fontStyle = FontStyle.Italic,
+                color = Color.Gray
+            )
+
         }
     }
 }
