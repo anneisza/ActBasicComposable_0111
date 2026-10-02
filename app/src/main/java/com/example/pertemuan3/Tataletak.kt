@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -96,5 +97,25 @@ fun TataletakRowColumn(modifier: Modifier){
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier){
     val gambar = painterResource(id = R.drawable.notasibalok)
+    Column() {
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(height = 110.dp)
+                .background(color = Color.Yellow),
+            contentAlignment = Alignment.Center
+        ){
+            Column() {
+                Row(
+                    modifier = modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Col1_Row1_Komponen1")
+                    Text(text = "Col1_Row1_Komponen2")
+                    Text(text = "Col1_Row1_Komponen3")
+                }
+            }
+        }
+    }
 
 }
