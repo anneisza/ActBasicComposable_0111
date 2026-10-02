@@ -17,14 +17,15 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Pertemuan3Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    //Panggil composable layout utama dengan padding dari Scaffold
-                    TataletakBoxColumnRow(
-                        modifier = Modifier.padding(paddingValues = innerPadding)
-                    )
-                }
-            }
+            TugasLoginLayout()
+//            Pertemuan3Theme {
+//                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+//                    //Panggil composable layout utama dengan padding dari Scaffold
+//                    TataletakBoxColumnRow(
+//                        modifier = Modifier.padding(paddingValues = innerPadding)
+//                    )
+//                }
+//            }
         }
     }
 }
