@@ -44,23 +44,23 @@ fun TugasLoginLayout(modifier: Modifier = Modifier){
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(top = 40.dp, bottom = 20.dp),
+                .padding(top = 60.dp, bottom = 20.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Top
         ) {
             //Judul halaman Loginnya nih
             Text(
                 text = "Login",
-                fontSize = 32.sp,
+                fontSize = 36.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.White
             )
             //Subjudul nya
             Text(
                 text = "Welcome to this healing app!",
-                fontSize = 14.sp,
+                fontSize = 18.sp,
                 fontStyle = FontStyle.Italic,
-                color = Color.Gray
+                color = Color.Black
             )
 
             Spacer(modifier = Modifier.height(30.dp))
@@ -72,29 +72,29 @@ fun TugasLoginLayout(modifier: Modifier = Modifier){
                 modifier = Modifier.size(150.dp)
             )
 
-            Spacer(modifier = Modifier.height(40.dp))
+            Spacer(modifier = Modifier.height(100.dp))
 
             //Label Nama
             Text(
                 text = "Nama",
-                fontSize = 16.sp,
+                fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.DarkGray
             )
             //Isian nama
             Text(
                 text = "Riza Fitria Istiqomah Zaitunah",
-                fontSize = 16.sp,
+                fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
                 fontStyle = FontStyle.Italic,
-                color = Color.Transparent
+                color = Color.Magenta
             )
             //Isian NIM
             Text(
                 text = "20240140111",
-                fontSize = 18.sp,
+                fontSize = 23.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.LightGray
+                color = Color.Blue
             )
 
             Spacer(modifier = Modifier.height(20.dp))
